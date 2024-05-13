@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVMFriends.Views.DBFriendPage"
+             Title="DBFriendPage">
+    <StackLayout>
+        <Label Text="Name" />
+        <Entry Text="{Binding Name}" />
+        <Label Text="Seond Name" />
+        <Entry Text="{Binding SecondName}" />
+        <Label Text="Email" />
+        <Entry Text="{Binding Email}" />
+        <Label Text="Phone" />
+        <Entry Text="{Binding Phone}" />
+        <Label Text="Image" />
+        <Entry Text="{Binding Image}" />
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Coхранить" Clicked="SaveFriend" />
+            <Button Text="Удалить" Clicked="DeleteFriend" />
+            <Button Text="Отмена" Clicked="Cancel" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
